@@ -443,7 +443,7 @@ function base_install ()
                     output_log "Cloning main repo with user: ${GIT_USER}"
                 fi
             else
-                MAIN_REPO=https://github.com/LearningLocker/learninglocker
+                MAIN_REPO=https://github.com/evident-digital/learninglocker
             fi
             # clone repo
             git clone -q -b ${GIT_BRANCH} $MAIN_REPO ${WEBAPP_SUBDIR}
@@ -2488,7 +2488,7 @@ if [[ $SETUP_AMI == true ]]; then
         rm -R /tmp/deploy
     fi
     # git clone
-    git clone https://github.com/LearningLocker/deploy deploy
+    git clone https://github.com/evident-digital/deploy deploy
 fi
 
 
